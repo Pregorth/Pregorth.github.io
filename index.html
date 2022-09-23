@@ -11,27 +11,19 @@
     <div class="container">
         <div class="content">
             <div class="hamburger">
-                <div class="item">
+                <a class="menu" href="burger.html">
                     <img src="Hamburger1.jpeg" alt="" class="photo">
-                    <div class="information">
-                        <p class="name">Hamburger1</p>
-                        <p class="content">Hamburger içeriği: ekmek cart curt köfte patates</p>
-                        <p class="price">Fiyat</p>
+                    <div class="menu-info">
+                        <p class="menu-name">Burgerler</p>
                     </div>
-                </div>
-                <div class="item">
-                    <img src="Hamburger2.jpeg" alt="" class="photo">
-                    <div class="information">
-                        <p class="name">Hamburger2</p>
-                        <p class="content">Hamburger içeriği: ekmek cart curt köfte patates</p>
-                        <p class="price">Fiyat</p>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
 </body>
 </html>
+<script>
+</script>
 <style>
     * {
         margin: 0 auto;
@@ -56,11 +48,21 @@
         display: flex;
         flex-direction: column;
     }
-    .item{
+    .menu{
         margin-bottom: 10px;
         display: flex;
         color: #F8F9FA;
         flex: 100%;
+        text-decoration: none;
+    }
+    .menu-info{
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .menu-name{
+        font-size: 32px;
+        font-weight: bold;
     }
     .photo{
         height: 120px;
@@ -69,7 +71,6 @@
     .information > p{
         margin-bottom: 10px;
         margin-left:5px;
-        margin-top: 10px;
     }
     .name{
         font-weight: bold;
@@ -82,11 +83,3 @@
         margin-top: 15px;
     }
 </style>
-<!--<div class="item">
-    <img src="" alt="" class="photo">
-    <div class="information">
-        <p class="name">lorem</p>
-        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, exercitationem?</p>
-        <p class="price">lorem ip</p>
-    </div>
-</div>-->
