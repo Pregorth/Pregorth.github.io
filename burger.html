@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><img src="/Logo.png" alt="" srcset="" class="logo"></header>
+    <div class="container">
+        <div class="content">
+            <div class="hamburger">
+                <div class="item">
+                    <img src="Hamburger1.jpeg" alt="" class="photo">
+                    <div class="information">
+                        <p class="name">Hamburger1</p>
+                        <p class="content">Hamburger içeriği: ekmek cart curt köfte patates</p>
+                        <p class="price">Fiyat</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Hamburger2.jpeg" alt="" class="photo">
+                    <div class="information">
+                        <p class="name">Hamburger2</p>
+                        <p class="content">Hamburger içeriği: ekmek cart curt köfte patates</p>
+                        <p class="price">Fiyat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    * {
+        margin: 0 auto;
+        font-family: helvetica;
+    }
+    body{
+        background-color: #3d4146;
+    }
+    header{
+        background-color:#27292c;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .logo{
+        width: 94px;
+        height: 60px;
+        padding: 5px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .item{
+        margin-bottom: 10px;
+        display: flex;
+        color: #F8F9FA;
+        flex: 100%;
+    }
+    .photo{
+        height: 120px;
+        width: 120px;
+    }
+    .information > p{
+        margin-bottom: 10px;
+        margin-left:5px;
+        margin-top: 10px;
+    }
+    .name{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .content{
+        font-size: 15px;
+    }
+    .price{
+        margin-top: 15px;
+    }
+</style>
